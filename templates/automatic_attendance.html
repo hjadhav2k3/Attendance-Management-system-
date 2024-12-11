@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automatic Attendance</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='attendance.css') }}">
+</head>
+<body>
+    <h1>Automatic Attendance</h1>
+    <form method="POST">
+        <label for="subject">Select Subject:</label>
+        <select id="subject" name="subject" required>
+            <option value="">Select a subject</option>
+            <!-- Phase I -->
+            <optgroup label="Phase I">
+                <option value="Anatomy">Anatomy</option>
+                <option value="Community Medicine">Community Medicine</option>
+            </optgroup>
+            <!-- Phase II -->
+            <optgroup label="Phase II">
+                <option value="Physiology">Physiology</option>
+                <option value="Pathology">Pathology</option>
+                <option value="Forensic Medicine & Toxicology">Forensic Medicine & Toxicology</option>
+                <option value="Surgery">Surgery</option>
+            </optgroup>
+            <!-- Phase III Part I -->
+            <optgroup label="Phase III Part I">
+                <option value="Biochemistry">Biochemistry</option>
+                <option value="Microbiology">Microbiology</option>
+                <option value="Medicine">Medicine</option>
+                <option value="Obs & Gyn">Obs & Gyn</option>
+            </optgroup>
+            <!-- Phase III Part II -->
+            <optgroup label="Phase III Part II">
+                <option value="Community Medicine">Community Medicine</option>
+                <option value="Pharmacology">Pharmacology</option>
+                <option value="Surgery">Surgery</option>
+                <option value="Psychiatry">Psychiatry</option>
+                <option value="Family Adoption Programme">Family Adoption Programme</option>
+            </optgroup>
+            <!-- Additional subjects -->
+            <optgroup label="Foundation Course">
+                <option value="Foundation Course">Foundation Course</option>
+                <option value="Forensic Med & TC">Forensic Med & TC</option>
+                <option value="Paediatrics">Paediatrics</option>
+                <option value="Dermatology">Dermatology</option>
+            </optgroup>
+            <optgroup label="ECA">
+                <option value="Medicine">Medicine</option>
+                <option value="Orthopaedics">Orthopaedics</option>
+                <option value="Radiology">Radiology</option>
+                <option value="Small Gp Discussion">Small Gp Discussion</option>
+                <option value="Surgery">Surgery</option>
+                <option value="Ophthalmology">Ophthalmology</option>
+                <option value="Paediatrics">Paediatrics</option>
+                <option value="AETCOM">AETCOM</option>
+            </optgroup>
+            <optgroup label="Special Topics">
+                <option value="Obs & Gyn">Obs & Gyn</option>
+                <option value="ENT">ENT</option>
+                <option value="Orthopaedics">Orthopaedics</option>
+                <option value="Pandemic Module">Pandemic Module</option>
+                <option value="Sports/ Yoga & Extra Curricular Activities">Sports/ Yoga & Extra Curricular Activities</option>
+                <option value="Anaesthsiology">Anaesthsiology</option>
+                <option value="Electives">Electives</option>
+            </optgroup>
+        </select>
+        <button type="submit">Submit Attendance</button>
+    </form>
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>

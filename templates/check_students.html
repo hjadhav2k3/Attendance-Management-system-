@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registered Students</title>
+</head>
+<body>
+    <h1>Registered Students</h1>
+    <table border="1">
+        <tr>
+            <th>Name</th>
+            <th>Enrollment Number</th>
+        </tr>
+        {% for student in students.iterrows() %}
+        <tr>
+            <td>{{ student[1]['Name'] }}</td>
+            <td>{{ student[1]['Enrollment'] }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <p><a href="/">Back to Home</a></p>
+</body>
+</html>
